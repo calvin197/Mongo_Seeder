@@ -1,0 +1,17 @@
+{
+  "name": "mongo_seeder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dataGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "writer": "node ./dummyWriter.js",
+    "mongoimport": "mongoimport --db morelooks --collection products --file ./dummyData.json --jsonArray --maintainInsertionOrder --numInsertionWorkers 2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node": "^12.4.0"
+  }
+}
