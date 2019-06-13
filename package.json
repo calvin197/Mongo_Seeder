@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "writer": "node ./dummyWriter.js",
-    "mongoimport": "mongoimport --db morelooks --collection products --file ./dummyData.json --jsonArray --maintainInsertionOrder --numInsertionWorkers 2"
+    "mongoimport": "mongoimport --host ec2-54-153-90-74.us-west-1.compute.amazonaws.com:27017 --db morelooks --collection products --file ./dummyData.json --jsonArray --maintainInsertionOrder --numInsertionWorkers 2"
   },
   "author": "",
   "license": "ISC",
